@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مانهوا - قصص المانهوا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>موقع قصص مانهوا</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن الموقع</a></li>
+                <li><a href="#stories">القصص</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>مرحباً بك في عالم المانهوا!</h2>
+        <p>استمتع بقراءة أفضل قصص المانهوا من جميع الأنواع.</p>
+    </section>
+
+    <section id="stories">
+        <h2>القصص المميزة</h2>
+        <div class="story">
+            <h3>اسم القصة 1</h3>
+            <p>وصف القصة 1...</p>
+            <button onclick="readStory('story1')">اقرأ المزيد</button>
+        </div>
+        <div class="story">
+            <h3>اسم القصة 2</h3>
+            <p>وصف القصة 2...</p>
+            <button onclick="readStory('story2')">اقرأ المزيد</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>عن الموقع</h2>
+        <p>موقعنا يتيح لك قراءة أفضل قصص المانهوا بشكل مجاني وبدون حدود.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 موقع قصص المانهوا. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* لتنسيق الكتابة بالعربية */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+// script.js
+function readStory(story) {
+    alert("ستبدأ قراءة " + story);
+}
